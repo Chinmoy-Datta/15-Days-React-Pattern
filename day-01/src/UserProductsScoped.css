@@ -1,0 +1,67 @@
+/* ================================
+   CATEGORY LAYOUT (SCOPED ONLY)
+   ================================ */
+
+.category-layout {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Sidebar */
+.category-sidebar {
+  width: 220px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  height: fit-content;
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* Category Buttons */
+.category-item {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  font-weight: 500;
+  color: #374151;
+  transition: background-color 0.2s ease;
+}
+
+.category-item:hover {
+  background-color: #e5e7eb;
+}
+
+/* Right section */
+.category-products {
+  flex: 1;
+}
+
+/* Grid ONLY for category page */
+.category-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Empty state */
+.category-empty {
+  font-size: 1.1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 3rem;
+}
